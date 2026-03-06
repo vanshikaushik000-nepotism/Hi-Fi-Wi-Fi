@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hi-Fi Wi-Fi | Unleash The Speed</title>
+  <meta name="description" content="Hi-Fi Wi-Fi — Next-generation ultra-fast internet. Blazing speeds, fiber technology, unlimited data. Get connected today." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;700;900&family=Rajdhani:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ===== LOADING SCREEN ===== -->
+  <div id="loader">
+    <div class="loader-inner">
+      <div class="loader-ring"></div>
+      <div class="loader-ring"></div>
+      <div class="loader-ring"></div>
+      <span class="loader-text">Hi-Fi Wi-Fi</span>
+    </div>
+  </div>
+
+  <!-- ===== NAVBAR ===== -->
+  <nav id="navbar">
+    <div class="nav-container">
+      <a href="#" class="logo"><span class="logo-hi">Hi-Fi</span> Wi-Fi</a>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#hero">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#plans">Plans</a></li>
+        <li><a href="#features">Features</a></li>
+        <li><a href="#coverage">Coverage</a></li>
+        <li><a href="#reviews">Reviews</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- ===== HERO SECTION ===== -->
+  <section id="hero">
+    <canvas id="particleCanvas"></canvas>
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <h1 class="hero-title">
+        <span class="hero-line">UNLEASH</span>
+        <span class="hero-line accent">THE SPEED</span>
+      </h1>
+      <p class="hero-sub">Next-Generation Internet by <strong>Hi-Fi Wi-Fi</strong></p>
+      <div class="hero-btns">
+        <a href="#contact" class="btn btn-primary glow-btn">
+          <i class="fas fa-bolt"></i> Get Connected
+        </a>
+        <a href="#plans" class="btn btn-outline glow-btn">
+          <i class="fas fa-layer-group"></i> View Plans
+        </a>
+      </div>
+      <div class="hero-speed-badge">
+        <span class="speed-number">10</span>
+        <span class="speed-unit">Gbps</span>
+        <span class="speed-label">Max Speed</span>
+      </div>
+    </div>
+    <div class="scroll-indicator">
+      <div class="mouse">
+        <div class="wheel"></div>
+      </div>
+      <span>Scroll Down</span>
+    </div>
+  </section>
+
+  <!-- ===== ABOUT SECTION ===== -->
+  <section id="about">
+    <div class="container">
+      <div class="section-header" data-animate>
+        <span class="section-tag">WHO WE ARE</span>
+        <h2 class="section-title">About <span class="accent">Hi-Fi Wi-Fi</span></h2>
+      </div>
+      <div class="about-grid">
+        <div class="about-text" data-animate>
+          <p class="about-lead">We're not just an internet provider — we're a <strong>speed revolution</strong>.</p>
+          <p>Hi-Fi Wi-Fi delivers blazing-fast fiber-optic internet engineered for the modern world. Whether you're streaming in 8K, dominating online battles, or running a global business from your living room, we keep you connected at the speed of light.</p>
+          <p>Our cutting-edge infrastructure, paired with relentless innovation, means zero buffering, zero excuses. Just pure, unthrottled power at your fingertips.</p>
+          <div class="about-stats">
+            <div class="stat-item">
+              <span class="stat-number" data-count="99.9">0</span><span class="stat-suffix">%</span>
+              <span class="stat-label">Uptime</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-number" data-count="500">0</span><span class="stat-suffix">K+</span>
+              <span class="stat-label">Users</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-number" data-count="150">0</span><span class="stat-suffix">+</span>
+              <span class="stat-label">Cities</span>
+            </div>
+          </div>
+        </div>
+        <div class="about-visual" data-animate>
+          <div class="about-card glass-card">
+            <div class="orbit-ring ring-1"></div>
+            <div class="orbit-ring ring-2"></div>
+            <div class="orbit-ring ring-3"></div>
+            <i class="fas fa-wifi about-icon"></i>
+            <span class="about-badge">Since 2018</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== PLANS SECTION ===== -->
+  <section id="plans">
+    <div class="container">
+      <div class="section-header" data-animate>
+        <span class="section-tag">CHOOSE YOUR PLAN</span>
+        <h2 class="section-title">Internet <span class="accent">Plans</span></h2>
+        <p class="section-desc">From casual browsing to extreme gaming — we've got a plan for every need.</p>
+      </div>
+      <div class="plans-grid">
+
+        <div class="plan-card glass-card" data-animate>
+          <div class="plan-badge">STARTER</div>
+          <h3 class="plan-name">Basic</h3>
+          <div class="plan-speed"><span>100</span> Mbps</div>
+          <div class="plan-price"><sup>$</sup>19<span>/mo</span></div>
+          <ul class="plan-features">
+            <li><i class="fas fa-check"></i> Unlimited Data</li>
+            <li><i class="fas fa-check"></i> Email Support</li>
+            <li><i class="fas fa-check"></i> 1 Device Optimized</li>
+            <li><i class="fas fa-check"></i> Standard Router</li>
+          </ul>
+          <a href="#contact" class="btn btn-outline glow-btn plan-btn">Get Started</a>
+        </div>
+
+        <div class="plan-card glass-card" data-animate>
+          <div class="plan-badge">POPULAR</div>
+          <h3 class="plan-name">Pro</h3>
+          <div class="plan-speed"><span>500</span> Mbps</div>
+          <div class="plan-price"><sup>$</sup>39<span>/mo</span></div>
+          <ul class="plan-features">
+            <li><i class="fas fa-check"></i> Unlimited Data</li>
+            <li><i class="fas fa-check"></i> 24/7 Support</li>
+            <li><i class="fas fa-check"></i> 5 Devices Optimized</li>
+            <li><i class="fas fa-check"></i> Wi-Fi 6 Router</li>
+          </ul>
+          <a href="#contact" class="btn btn-primary glow-btn plan-btn">Get Started</a>
+        </div>
+
+        <div class="plan-card glass-card featured" data-animate>
+          <div class="plan-ribbon">BEST VALUE</div>
+          <div class="plan-badge">POWER</div>
+          <h3 class="plan-name">Ultra</h3>
+          <div class="plan-speed"><span>1</span> Gbps</div>
+          <div class="plan-price"><sup>$</sup>59<span>/mo</span></div>
+          <ul class="plan-features">
+            <li><i class="fas fa-check"></i> Unlimited Data</li>
+            <li><i class="fas fa-check"></i> Priority Support</li>
+            <li><i class="fas fa-check"></i> 10 Devices Optimized</li>
+            <li><i class="fas fa-check"></i> Wi-Fi 6E Mesh System</li>
+          </ul>
+          <a href="#contact" class="btn btn-primary glow-btn plan-btn">Get Started</a>
+        </div>
+
+        <div class="plan-card glass-card" data-animate>
+          <div class="plan-badge">ELITE</div>
+          <h3 class="plan-name">Gamer</h3>
+          <div class="plan-speed"><span>10</span> Gbps</div>
+          <div class="plan-price"><sup>$</sup>89<span>/mo</span></div>
+          <ul class="plan-features">
+            <li><i class="fas fa-check"></i> Unlimited Data</li>
+            <li><i class="fas fa-check"></i> Dedicated Game Server</li>
+            <li><i class="fas fa-check"></i> Ultra-Low Latency</li>
+            <li><i class="fas fa-check"></i> Wi-Fi 7 Gaming Router</li>
+          </ul>
+          <a href="#contact" class="btn btn-outline glow-btn plan-btn">Get Started</a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FEATURES SECTION ===== -->
+  <section id="features">
+    <div class="container">
+      <div class="section-header" data-animate>
+        <span class="section-tag">WHY CHOOSE US</span>
+        <h2 class="section-title">Powerful <span class="accent">Features</span></h2>
+      </div>
+      <div class="features-grid">
+        <div class="feature-card glass-card" data-animate>
+          <div class="feature-icon-wrap">
+            <i class="fas fa-rocket"></i>
+            <div class="icon-glow"></div>
+          </div>
+          <h3>Ultra Fast Speed</h3>
+          <p>Experience up to 10 Gbps with our next-gen fiber network. Download, stream, and game without a millisecond of delay.</p>
+        </div>
+        <div class="feature-card glass-card" data-animate>
+          <div class="feature-icon-wrap">
+            <i class="fas fa-headset"></i>
+            <div class="icon-glow"></div>
+          </div>
+          <h3>24/7 Support</h3>
+          <p>Our expert team is always online. Any issue, any time — we'll resolve it fast so you stay connected.</p>
+        </div>
+        <div class="feature-card glass-card" data-animate>
+          <div class="feature-icon-wrap">
+            <i class="fas fa-network-wired"></i>
+            <div class="icon-glow"></div>
+          </div>
+          <h3>Fiber Technology</h3>
+          <p>Powered by state-of-the-art fiber optics. Pure light-speed data transmission, zero copper bottlenecks.</p>
+        </div>
+        <div class="feature-card glass-card" data-animate>
+          <div class="feature-icon-wrap">
+            <i class="fas fa-infinity"></i>
+            <div class="icon-glow"></div>
+          </div>
+          <h3>Unlimited Data</h3>
+          <p>No caps, no throttling, no surprises. Use as much data as you want — it's truly unlimited.</p>
+        </div>
+        <div class="feature-card glass-card" data-animate>
+          <div class="feature-icon-wrap">
+            <i class="fas fa-shield-halved"></i>
+            <div class="icon-glow"></div>
+          </div>
+          <h3>Secure Network</h3>
+          <p>Enterprise-grade encryption and DDoS protection keep your connection safe from every threat.</p>
+        </div>
+        <div class="feature-card glass-card" data-animate>
+          <div class="feature-icon-wrap">
+            <i class="fas fa-gauge-high"></i>
+            <div class="icon-glow"></div>
+          </div>
+          <h3>Low Latency</h3>
+          <p>Sub-millisecond ping for gaming, trading, and video calls. The fastest response times in the industry.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== COVERAGE SECTION ===== -->
+  <section id="coverage">
+    <div class="container">
+      <div class="section-header" data-animate>
+        <span class="section-tag">OUR REACH</span>
+        <h2 class="section-title">Coverage <span class="accent">Map</span></h2>
+        <p class="section-desc">Expanding rapidly across the nation. Check if Hi-Fi Wi-Fi is in your area.</p>
+      </div>
+      <div class="coverage-visual" data-animate>
+        <canvas id="networkCanvas"></canvas>
+        <div class="coverage-stats">
+          <div class="coverage-stat glass-card">
+            <i class="fas fa-city"></i>
+            <span class="cs-number">150+</span>
+            <span class="cs-label">Cities</span>
+          </div>
+          <div class="coverage-stat glass-card">
+            <i class="fas fa-globe"></i>
+            <span class="cs-number">30+</span>
+            <span class="cs-label">States</span>
+          </div>
+          <div class="coverage-stat glass-card">
+            <i class="fas fa-tower-broadcast"></i>
+            <span class="cs-number">5000+</span>
+            <span class="cs-label">Towers</span>
+          </div>
+          <div class="coverage-stat glass-card">
+            <i class="fas fa-satellite-dish"></i>
+            <span class="cs-number">99.9%</span>
+            <span class="cs-label">Uptime</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== REVIEWS SECTION ===== -->
+  <section id="reviews">
+    <div class="container">
+      <div class="section-header" data-animate>
+        <span class="section-tag">TESTIMONIALS</span>
+        <h2 class="section-title">Customer <span class="accent">Reviews</span></h2>
+      </div>
+      <div class="reviews-slider" data-animate>
+        <div class="reviews-track" id="reviewsTrack">
+
+          <div class="review-card glass-card">
+            <div class="review-stars">
+              <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+            </div>
+            <p class="review-text">"Switched from our old provider and the difference is insane. Downloads that used to take hours now finish in seconds. Hi-Fi Wi-Fi is the real deal."</p>
+            <div class="review-author">
+              <div class="review-avatar">JD</div>
+              <div>
+                <strong>James Donovan</strong>
+                <span>Pro Plan User</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="review-card glass-card">
+            <div class="review-stars">
+              <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+            </div>
+            <p class="review-text">"As a competitive gamer, latency is everything. Hi-Fi Wi-Fi's Gamer plan gives me sub-5ms ping consistently. No more lag, no more excuses."</p>
+            <div class="review-author">
+              <div class="review-avatar">SK</div>
+              <div>
+                <strong>Sarah Kim</strong>
+                <span>Gamer Plan User</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="review-card glass-card">
+            <div class="review-stars">
+              <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-stroke"></i>
+            </div>
+            <p class="review-text">"Running a remote team of 20 people and our video calls have never been smoother. The Ultra plan handles everything we throw at it flawlessly."</p>
+            <div class="review-author">
+              <div class="review-avatar">MR</div>
+              <div>
+                <strong>Michael Reeves</strong>
+                <span>Ultra Plan User</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="review-card glass-card">
+            <div class="review-stars">
+              <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+            </div>
+            <p class="review-text">"Their 24/7 support is the best I've experienced. Had an issue at 2 AM and it was fixed in 15 minutes. Incredible customer service!"</p>
+            <div class="review-author">
+              <div class="review-avatar">AP</div>
+              <div>
+                <strong>Aisha Patel</strong>
+                <span>Pro Plan User</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="review-card glass-card">
+            <div class="review-stars">
+              <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+            </div>
+            <p class="review-text">"My whole family streams simultaneously — 4K movies, online gaming, video calls — and we've never had a single buffer. Worth every penny."</p>
+            <div class="review-author">
+              <div class="review-avatar">CT</div>
+              <div>
+                <strong>Carlos Torres</strong>
+                <span>Ultra Plan User</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <div class="reviews-controls">
+          <button class="review-btn" id="reviewPrev" aria-label="Previous review"><i class="fas fa-chevron-left"></i></button>
+          <div class="reviews-dots" id="reviewsDots"></div>
+          <button class="review-btn" id="reviewNext" aria-label="Next review"><i class="fas fa-chevron-right"></i></button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CONTACT SECTION ===== -->
+  <section id="contact">
+    <div class="container">
+      <div class="section-header" data-animate>
+        <span class="section-tag">GET IN TOUCH</span>
+        <h2 class="section-title">Contact <span class="accent">Us</span></h2>
+      </div>
+      <div class="contact-grid">
+        <form class="contact-form glass-card" id="contactForm" data-animate>
+          <div class="form-group">
+            <input type="text" id="formName" placeholder=" " required />
+            <label for="formName">Your Name</label>
+            <div class="form-line"></div>
+          </div>
+          <div class="form-group">
+            <input type="email" id="formEmail" placeholder=" " required />
+            <label for="formEmail">Email Address</label>
+            <div class="form-line"></div>
+          </div>
+          <div class="form-group">
+            <input type="tel" id="formPhone" placeholder=" " />
+            <label for="formPhone">Phone Number</label>
+            <div class="form-line"></div>
+          </div>
+          <div class="form-group">
+            <textarea id="formMessage" rows="4" placeholder=" " required></textarea>
+            <label for="formMessage">Your Message</label>
+            <div class="form-line"></div>
+          </div>
+          <button type="submit" class="btn btn-primary glow-btn submit-btn">
+            <span>Send Message</span>
+            <i class="fas fa-paper-plane"></i>
+          </button>
+        </form>
+        <div class="contact-info" data-animate>
+          <div class="info-card glass-card">
+            <div class="info-icon"><i class="fas fa-phone"></i></div>
+            <div>
+              <h4>Phone</h4>
+              <p>+1 (800) HIFI-WIFI</p>
+              <p>+1 (800) 443-4934</p>
+            </div>
+          </div>
+          <div class="info-card glass-card">
+            <div class="info-icon"><i class="fas fa-envelope"></i></div>
+            <div>
+              <h4>Email</h4>
+              <p>hello@hifiwifi.com</p>
+              <p>support@hifiwifi.com</p>
+            </div>
+          </div>
+          <div class="info-card glass-card">
+            <div class="info-icon"><i class="fas fa-location-dot"></i></div>
+            <div>
+              <h4>Headquarters</h4>
+              <p>4200 Innovation Drive</p>
+              <p>San Francisco, CA 94107</p>
+            </div>
+          </div>
+          <div class="info-card glass-card">
+            <div class="info-icon"><i class="fas fa-clock"></i></div>
+            <div>
+              <h4>Business Hours</h4>
+              <p>Support: 24/7/365</p>
+              <p>Office: Mon–Fri 9AM–6PM</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer id="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="#" class="logo"><span class="logo-hi">Hi-Fi</span> Wi-Fi</a>
+          <p>Next-generation internet for a hyperconnected world. Blazing speed, zero compromises.</p>
+          <div class="footer-socials">
+            <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" aria-label="Twitter / X"><i class="fab fa-x-twitter"></i></a>
+            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+          </div>
+        </div>
+        <div class="footer-links">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#plans">Plans & Pricing</a></li>
+            <li><a href="#features">Features</a></li>
+            <li><a href="#coverage">Coverage Map</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-links">
+          <h4>Support</h4>
+          <ul>
+            <li><a href="#">Help Center</a></li>
+            <li><a href="#">Speed Test</a></li>
+            <li><a href="#">Setup Guide</a></li>
+            <li><a href="#">FAQs</a></li>
+            <li><a href="#">Report an Issue</a></li>
+          </ul>
+        </div>
+        <div class="footer-links">
+          <h4>Legal</h4>
+          <ul>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms of Service</a></li>
+            <li><a href="#">Cookie Policy</a></li>
+            <li><a href="#">Acceptable Use</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 Hi-Fi Wi-Fi. All rights reserved.</p>
+        <p>Engineered with <i class="fas fa-bolt" style="color: var(--accent);"></i> for maximum speed.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
