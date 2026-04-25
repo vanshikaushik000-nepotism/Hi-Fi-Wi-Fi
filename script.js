@@ -398,4 +398,28 @@
     }, 3000);
   });
 
+  // ─── Chatbot Widget Toggle ───
+  const chatToggle = document.getElementById('chatToggle');
+  const chatContainer = document.getElementById('chatContainer');
+
+  if (chatToggle && chatContainer) {
+    chatToggle.addEventListener('click', () => {
+      const isActive = chatContainer.classList.toggle('active');
+      chatToggle.classList.toggle('active');
+
+      if (isActive) {
+        // Optional: track open event
+        console.log('Chat opened');
+      }
+    });
+
+    // Close on escape key
+    window.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape' && chatContainer.classList.contains('active')) {
+        chatContainer.classList.remove('active');
+        chatToggle.classList.remove('active');
+      }
+    });
+  }
+
 })();
